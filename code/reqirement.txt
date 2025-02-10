@@ -1,8 +1,1 @@
-streamlit
-pandas
-numpy
-scikit-surprise
-scikit-learn
-cython
-
-
+3.10.12
