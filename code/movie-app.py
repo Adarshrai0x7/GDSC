@@ -54,7 +54,7 @@ def hybrid_recommendation(user_id, movie_title, n_recommendations=5):
 
 # Streamlit App
 st.title('Movie Recommender System')
-movie_input = st.text_input('Enter Movie Title:')
+movie_input = selected_movie = st.selectbox("Select a Movie:", movies_data["title"].values)
 user_input = st.number_input('Enter User ID:', min_value=1, max_value=1000, step=1)
 if st.button('Get Recommendations'):
     st.write('Content-Based Recommendations:', recommend_movies_by_genre(movie_input))
